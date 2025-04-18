@@ -50,15 +50,7 @@ const Header = () => {
           </ul>
 
           {/* Search Input (Hidden on Small Screens) */}
-          <div className="flex w-[192px] h-[49px] sm:hidden">
-            <input
-              type="text"
-              placeholder="Search..."
-              value={searchQuery}
-              onChange={handleSearchChange}
-              className="flex-grow text-sm px-4 rounded-l-md border border-red-300 focus:outline-none focus:ring-2 focus:ring-red-500 placeholder-gray-500 md:w-[467px] w-auto"
-            />
-          </div>
+         
         </div>
 
         {/* Mobile Menu Toggle Button */}

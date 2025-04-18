@@ -25,7 +25,7 @@ export default function GetUpdates() {
                 className="flex-grow text-sm px-4 rounded-l-md border border-red-300 focus:outline-none focus:ring-2 focus:ring-red-500 placeholder-gray-500 md:w-[467px] w-auto"
               />
               <button className=" bg-red-600 text-white text-sm  hover:bg-red-700 transition ml-2 w-[auto] px-4 h-[50px] font-bold">
-                Get Me In
+                Get In
               </button>
             </div>
           </div>

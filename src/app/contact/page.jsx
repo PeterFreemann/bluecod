@@ -103,7 +103,6 @@ const episodesData = [
 export default function Page() {
   const [currentPage, setCurrentPage] = useState(1);
   const episodesPerPage = 7;
-
   const indexOfLastEpisode = currentPage * episodesPerPage;
   const indexOfFirstEpisode = indexOfLastEpisode - episodesPerPage;
   const currentEpisodes = episodesData.slice(

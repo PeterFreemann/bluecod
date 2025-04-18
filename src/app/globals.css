@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.header {
+  position: relative;
+  overflow: hidden;
+  height: 72px;
+  z-index: 1;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/images/headerbg.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(8px); /* Adjust blur here */
+  transform: scale(1.1); /* Prevent edge cropping */
+  z-index: -1;
+  opacity: 0.9;
+}
+
+.categories{
+  background-image: url('/images/breakingnews.jpeg');
+}
+
+.feature-episode {
+  background-image: url('/images/africabusiness.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 561px;
+  
+}

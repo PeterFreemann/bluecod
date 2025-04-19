@@ -105,15 +105,15 @@ export default function EpisodesPage() {
       {/* Hero Section */}
       <Header />
       <UnderHeader />
-      <div className="grid grid-cols-1 md:grid-cols-6 gap-4 py-10 md:px-10 px-8  bg-gradient-to-b from-[#2B3221] to-[#F2F2F200] mb-12">
-        <div className="flex justify-center items-center col-span-2">
+      <div className="grid grid-cols-1 md:grid-cols-6 gap-4 py-10 md:px-10 px-5  bg-gradient-to-b from-[#2B3221] to-[#F2F2F200] mb-12">
+        <div className="flex justify-center items-center md:col-span-2">
           <img
             src="/images/trending.jpeg"
             className="object-cover w-full h-auto"
             alt="The Funeral Experience – Podcast"
           />
         </div>
-        <div className="col-span-4 flex flex-col justify-center text-white">
+        <div className="md:col-span-4 flex flex-col justify-center text-white">
           <p className="text-sm">SEPT 3, 2023</p>
           <h1 className="text-[20px] font-bold mb-5">
             The Funeral Experience – the Good, the Bad, and the Ugly
@@ -208,7 +208,7 @@ export default function EpisodesPage() {
       </div>
 
       {/* Episodes List */}
-      <div className="px-8">
+      <div className="md:px-5 px-3">
         <h2 className="text-xl font-semibold mb-6">Next Episode in Queue</h2>
 
         <div className="space-y-10 grid grid-cols-1 md:grid-cols-4 gap-4">
@@ -244,11 +244,18 @@ export default function EpisodesPage() {
           ))}
         </div>
 
-        {/* Get Updates Section */}
-        <GetUpdates />
+        
+        
 
-        {/* Pagination Controls */}
-        <div className="mt-10 flex justify-center gap-4">
+        
+        
+      </div>
+      {/* Get Updates Section */}
+
+      <GetUpdates />
+
+      
+      <div className="mt-10 flex justify-center gap-4">
           {Array.from({ length: totalPages }, (_, i) => (
             <button
               key={i + 1}
@@ -263,7 +270,6 @@ export default function EpisodesPage() {
             </button>
           ))}
         </div>
-      </div>
 
       {/* Footer */}
       <Footer />

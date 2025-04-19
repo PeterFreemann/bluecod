@@ -6,19 +6,19 @@
       title: "Home",
     },
     {
-      id: "company",
+      id: "/company",
       title: "Company",
     },
     {
-      id: "resources",
+      id: "/resources",
       title: "Resources",
     },
     {
-      id: "contact",
+      id: "/contact",
       title: "Contact Us",
     },
     {
-      id: "advertis",
+      id: "/advertis",
       title: "Advertise",
     },
   ];

@@ -52,16 +52,16 @@ export default function Page() {
       <div>
         <Headers />
         <UnderHeader />
-        <div className="grid grid-cols-6 gap-4 p-10 bg-gradient-to-b from-[#2B3221] to-[#F2F2F200] mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-6 gap-4 p-10 bg-gradient-to-b from-[#2B3221] to-[#F2F2F200] mb-12">
           {/* Hero section */}
-          <div className="flex justify-center items-center col-span-2">
+          <div className="flex justify-center items-center md:col-span-2">
             <img
               src="/images/trending.jpeg"
               className="object-cover w-full h-auto"
               alt=""
             />
           </div>
-          <div className="col-span-4 flex flex-col justify-center text-white">
+          <div className="md:col-span-4 flex flex-col justify-center text-white">
             <h1 className="text-2xl font-bold mb-5">PODCAST</h1>
             <h1 className="text-xl font-semibold">Hope For the Widow</h1>
             <p className="text-base">
@@ -86,12 +86,12 @@ export default function Page() {
         <h1>ALL EPISODES ({Episodes.length} AVAILABLE)</h1>
         <div className="mt-10 space-y-10">
           {currentEpisodes.map((episode) => (
-            <div key={episode.id} className="grid grid-cols-12 gap-4">
-              <div className="col-span-1">
+            <div key={episode.id} className="grid md:grid-cols-12 gap-4">
+              <div className="md:col-span-1">
                 <img src={episode.image} alt={episode.title} />
               </div>
 
-              <div className="col-span-7">
+              <div className="md:col-span-7">
                 <p className="mb-1 text-[13px]">
                   {episode.date} <span className="mx-1">•</span> {episode.min}
                 </p>

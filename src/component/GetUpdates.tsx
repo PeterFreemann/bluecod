@@ -2,7 +2,7 @@ import React from "react";
 
 export default function GetUpdates() {
   return (
-    <section className=" md:px-12 bg-[#F6E8E8] md:h-[986px] lg:h-[486px] h-[850px]  ">
+    <section className=" md:px-8 bg-[#F6E8E8] md:h-[986px] lg:h-[486px] h-[850px] md:mx-2  ">
       <div className=" grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 ">
         <div className="h-[486px] flex items-center justify-start px-10">
           <div className="flex flex-col max-w-xl">
@@ -22,9 +22,9 @@ export default function GetUpdates() {
               <input
                 type="text"
                 placeholder="Search..."
-                className="flex-grow text-sm px-4 rounded-l-md border border-red-300 focus:outline-none focus:ring-2 focus:ring-red-500 placeholder-gray-500 md:w-[467px] w-auto"
+                className=" flex-grow text-sm px-4 rounded-l-md border border-red-300 focus:outline-none focus:ring-2 focus:ring-red-500 placeholder-gray-500 md:w-[467px] w-auto"
               />
-              <button className=" bg-red-600 text-white text-sm  hover:bg-red-700 transition ml-2 w-[auto] px-4 h-[50px] font-bold">
+              <button className="  bg-red-600 text-white text-sm  hover:bg-red-700 transition ml-2 w-[auto] px-4 h-[50px] font-bold">
                 Get In
               </button>
             </div>

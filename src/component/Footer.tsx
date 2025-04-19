@@ -30,7 +30,7 @@ export default function Footer() {
             key={index}
             className={`relative px-2 ${
               index !== array.length - 1
-                ? "after:content-[''] after:absolute after:top-1/2 after:translate-y-[-50%] after:right-0 after:h-5 after:w-[1px] after:bg-gray-400"
+                ? "sm:after:content-[''] sm:after:absolute sm:after:top-1/2 sm:after:translate-y-[-50%] sm:after:right-0 sm:after:h-5 sm:after:w-[1px] sm:after:bg-gray-400"
                 : ""
             }`}
           >

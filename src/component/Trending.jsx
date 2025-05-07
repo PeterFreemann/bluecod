@@ -51,7 +51,7 @@ const cards = [
   {
     id: 6,
     title: "Podcast 6",
-    image: "/images/podcast4.jpg",
+    image: "/images/trendingi.jpeg",
     title: "Inspiring Talk",
     subtitle: "Episode 8",
     about:
@@ -60,12 +60,13 @@ const cards = [
   {
     id: 7,
     title: "Podcast 7",
-    image: "/images/podcast5.jpg",
+    image: "/images/trending.jpeg",
     title: "Inspiring Talk",
     subtitle: "Episode 8",
     about:
       "The spelling mistakes in the text had been highlighted in green.,The text is finished, but the pictures will have to be pasted in later.You need to demonstrate to the examiners that you have more than a literal understanding of the text.",
   },
+  
 ];
 
 export default function Trending() {

@@ -46,6 +46,7 @@ const cards = [
     image: "/images/sphere.jpeg",
     subtitle: "Business Chats",
   },
+  
 ];
 
 export default function Prodcast() {

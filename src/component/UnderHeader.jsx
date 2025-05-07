@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendar } from "@fortawesome/free-solid-svg-icons";
@@ -7,14 +8,12 @@ import { faMicrophone } from "@fortawesome/free-solid-svg-icons";
 import { faBoxes } from "@fortawesome/free-solid-svg-icons";
 import { faPodcast } from "@fortawesome/free-solid-svg-icons";
 
-
-
 function UnderHeader() {
   return (
-    <div className="under grid grid-cols md:grid-cols-2 flex justify-end items-center bg-black ">
+    <div className="under grid grid-cols-1 lg:grid-cols-2 justify-end items-center bg-black ">
       {/* Left Side */}
       <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-start h-full">
-        <div className="header justify-between flex items-center md:w-[700px]  px-4">
+        <div className="header justify-between flex items-center md:w-[770px]  px-4">
           {/* Left Content */}
           <div className="flex align-center justify-center">
             {/* Icon */}
@@ -46,7 +45,10 @@ function UnderHeader() {
           {/* Right Content */}
           <div className="flex justify-end">
             <h1 className="text-white text-[13px] font-[600] flex items-center">
-              <FontAwesomeIcon icon={faCalendar} className="text-white-500 mr-2" />
+              <FontAwesomeIcon
+                icon={faCalendar}
+                className="text-white-500 mr-2"
+              />
               View schedules
             </h1>
           </div>
@@ -55,24 +57,45 @@ function UnderHeader() {
 
       {/* Right Side */}
       <div className="py-4 bg-black flex justify-end items-center h-full">
-        <ul className="text-[15px] text-white flex gap-4 font-bold text-black font-[700] font-montserrat">
+        <ul className="text-[15px] text-white flex gap-4 font-bold font-[700] font-montserrat">
           <li className="font-montserrat pr-4 pl-4 md:pl-0 border-r border-white last:border-0">
-            <span className="hidden sm:inline"><FontAwesomeIcon icon={faBook} className="text-white text-xl mr-2" />
-            </span>
-            Latest new
+            <Link href="/latest-news" className="flex items-center">
+              <span className="hidden sm:inline">
+                <FontAwesomeIcon
+                  icon={faBook}
+                  className="text-white text-xl mr-2"
+                />
+              </span>
+              Latest News
+            </Link>
           </li>
           <li className="pr-4 border-r border-white last:border-0">
-            <span className="hidden sm:inline"><FontAwesomeIcon icon={faMicrophone} className="text-white text-xl mr-2 " />
-            </span>
-            New Episode
+            <Link href="/new-episode" className="flex items-center">
+              <span className="hidden sm:inline">
+                <FontAwesomeIcon
+                  icon={faMicrophone}
+                  className="text-white text-xl mr-2"
+                />
+              </span>
+              New Episode
+            </Link>
           </li>
           <li className="pr-4 border-r border-white last:border-0">
-            <span className="hidden sm:inline"><FontAwesomeIcon icon={faBoxes} className="text-white mr-2" />
-            </span>
-            Our Services
+            <Link href="/services" className="flex items-center">
+              <span className="hidden sm:inline">
+                <FontAwesomeIcon icon={faBoxes} className="text-white mr-2" />
+              </span>
+              Our Services
+            </Link>
           </li>
-          <li className="pr-4 last:border-0"><span className="hidden sm:inline"><FontAwesomeIcon icon={faPodcast} className="text-white mr-2" />
-          </span>All Podcast</li>
+          <li className="pr-4 last:border-0">
+            <Link href="/podcasts" className="flex items-center">
+              <span className="hidden sm:inline">
+                <FontAwesomeIcon icon={faPodcast} className="text-white mr-2" />
+              </span>
+              All Podcast
+            </Link>
+          </li>
         </ul>
       </div>
     </div>
